@@ -4,6 +4,7 @@
 
 ;; Author: SAKURAI Masashi <m.sakurai at kiwanami.net>
 ;; Keywords: github
+;; Package-Requires: ((request-deferred "0.2.0") (ctable "0.1.2"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -32,6 +33,7 @@
 (defvar gh:auth-token "TOKEN-CODE"
   "your application token which you got from https://github.com/settings/applications")
 
+;;;###autoload
 (defun gh:open-buffer-issues ()
   (interactive)
   (deferred:$
