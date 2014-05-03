@@ -27,6 +27,7 @@
 
 (require 'request-deferred)
 (require 'ctable)
+(require 'json)
 
 (defvar gh:auth-token "TOKEN-CODE"
   "your application token which you got from https://github.com/settings/applications")
